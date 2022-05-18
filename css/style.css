@@ -4,6 +4,33 @@
 	margin: 0;
 	padding: 0;
 }
+
+.parallax {
+	    	background-image: url("../images/Artboard 1.1.png");
+
+	  
+	  		min-height: 500px; 
+
+	  
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	padding-top: 55px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	position: absolute;
+	pointer-events: none;
+}
+
+/*WAVES*/
 section
 {
 	position: relative;
@@ -63,39 +90,9 @@ section .wave.wave2
 	}
 
 }
+/*END WAVES*/
 
-.parallax {
-	    	background-image: url("../images/Artboard 1.1.png");
-
-	  
-	  		min-height: 500px; 
-
-	  
-		  background-attachment: fixed;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  background-size: cover;
-}
-
-.sub {
-	max-height: 70px;
-	margin-left: 50px;
-	position: fixed;
-	z-index: 0;
-}
-
-#background-wrap {
-    bottom: 0;
-	left: 0;
-	padding-top: 55px;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-	position: absolute;
-}
-
-/* KEYFRAMES */
+/* CLOUD KEYFRAMES */
 
 @-webkit-keyframes animateCloud {
     0% {
@@ -123,61 +120,9 @@ section .wave.wave2
         margin-left: 100%;
     }
 }
+/* END CLOUD KEYFRAMES */
 
-/* ANIMATIONS */
-
-.x1 {
-	-webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
-	animation: animateCloud 35s linear infinite;
-	
-	-webkit-transform: scale(0.65);
-	-moz-transform: scale(0.65);
-	transform: scale(0.65);
-}
-
-.x2 {
-	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x3 {
-	-webkit-animation: animateCloud 30s linear infinite;
-	-moz-animation: animateCloud 30s linear infinite;
-	animation: animateCloud 30s linear infinite;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	transform: scale(0.5);
-}
-
-.x4 {
-	-webkit-animation: animateCloud 18s linear infinite;
-	-moz-animation: animateCloud 18s linear infinite;
-	animation: animateCloud 18s linear infinite;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x5 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
-	animation: animateCloud 25s linear infinite;
-	
-	-webkit-transform: scale(0.55);
-	-moz-transform: scale(0.55);
-	transform: scale(0.55);
-}
-
-/* OBJECTS */
-
+/*CLOUD OBJECT*/
 .cloud {
 	background: #fff;
 	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
@@ -230,6 +175,303 @@ section .wave.wave2
 	top: -90px;
 }
 
+/*CLOUD ANIMATIONS*/    
+.x1 {
+	-webkit-animation: animateCloud 35s linear infinite;
+	-moz-animation: animateCloud 35s linear infinite;
+	animation: animateCloud 35s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
+}
+
+.x2 {
+	-webkit-animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 20s linear infinite;
+	animation: animateCloud 20s linear infinite;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x3 {
+	-webkit-animation: animateCloud 30s linear infinite;
+	-moz-animation: animateCloud 30s linear infinite;
+	animation: animateCloud 30s linear infinite;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x4 {
+	-webkit-animation: animateCloud 18s linear infinite;
+	-moz-animation: animateCloud 18s linear infinite;
+	animation: animateCloud 18s linear infinite;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x5 {
+	-webkit-animation: animateCloud 25s linear infinite;
+	-moz-animation: animateCloud 25s linear infinite;
+	animation: animateCloud 25s linear infinite;
+	
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	transform: scale(0.55);
+}
+/* END CLOUD ANIMATIONS */
+
+/*DOLPHIN*/
+
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-165px)
+              rotate(-360deg);
+  }
+}
+
+/*END DOLPHIN*/
+
+/*	JELLYFISH */
+body {
+  margin: 0;
+}
+
+.ctn {
+  margin-left: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+}
+
+
+
+@keyframes swim {
+  50% {
+    transform: scaleX(0.7) scaleY(1.5);
+  }
+}
+
+#jelly-body {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  background-color: red;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 4s swim infinite ease-out;
+}
+
+@keyframes tentacle {
+  0% {
+    transform: translateY(-178px);
+    stroke-dashoffset: -185px;
+  }
+
+  100% {
+    transform: translateY(0px);
+    stroke-dashoffset: 0px;
+  }
+}
+
+.tentacle {
+  stroke-dasharray: 178px;
+  animation: 8s tentacle infinite linear;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+#jellyfish {
+  animation: 4s move infinite linear;
+}
+/*END JELLYFISH*/
+
+/*CLASSES*/
+.sub {
+	max-height: 70px;
+	margin-left: 50px;
+	position: fixed;
+	z-index: 0;
+	animation:  bounce-1 1s linear infinite;
+}
+
+.scuba {
+	max-height: 40px;
+	margin-left: 180px;
+	position: fixed;
+	z-index: 0;
+	animation:  bounce-1 1s linear infinite;
+}
+
+.dolph {
+	max-height: 90px;
+	margin-left: 500px;
+	position: absolute;
+	z-index: 0;
+	animation: circle 6s linear infinite;
+}
+
+}
+
+.bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+    }
+
+/*END CLASSES*/
+
+
+
+/* SCUBA KEYFRAMES */
+
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-25%); }
+        100% { transform: translateY(0); }
+    }
+/* END SCUBA ANIMATIONS */
+
+/* FISH ANIMATIONS */
+svg.fish{
+  overflow:visible;
+}
+
+@-webkit-keyframes swim
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+@keyframes swim
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: sticky;	
+	animation: swim 20s;
+	-webkit-animation: swim 20s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+svg #fish1,
+svg #fish2,
+svg #fish3,
+svg #fish4,
+svg #fish5,
+svg #fish6 {
+fill:#528484;
+  
+    -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+svg #fish2{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+svg #fish3{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+svg #fish4{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+svg #fish5{
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+
+svg #fish6{
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+/**/
+@-moz-keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+/*END Fish Animation*/
+
+
 ul {
 	list-style: square;
 }
@@ -249,3 +491,10 @@ li::before {
 	/* Optional tweaks */
     padding-right: 10px;
 }
+
+p {
+	margin-bottom: 0px;
+	font-size: 20px;
+	z-index: 2;
+	color: whitesmoke;
+	font-family: bungee;
